@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Ivashkovskiy Shop
+    </title>
+</head>
+
+<body>
+    <h3 align="center"> Товары интернет-магазина "У Фёдора"</h3>
+    <table align="center">
+        <thead>
+            <tr>
+                <td>Название</td>
+                <td>Производитель</td>
+                <td>Цена</td>
+                <td>&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var honey in ViewBag.Honeys)
+                {
+                    <tr>
+                        <td>@honey.Name</td>
+                        <td>@honey.Producer</td>
+                        <td>@honey.Price</td>
+                        <td><a href="/Home/Buy/@honey.Id">Купить</a></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</body>
+</html>
