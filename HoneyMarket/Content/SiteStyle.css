@@ -1,6 +1,79 @@
-﻿body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+﻿html, body, ul, li {
+    margin: 0;
+}
+
+body {
     background-color: #fee5ac;
     font-family: 'Century Gothic';
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    height: inherit;
+    min-height: inherit;
+    background: #ffffff;
+}
+
+header {
+    height: 150px;
+}
+
+nav {
+    text-align: center;
+}
+
+    nav .wrapper {
+        background: inherit;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 20px;
+        font-size: 21px;
+        font-style: oblique;
+    }
+
+        nav li a {
+            text-decoration: none;
+        }
+
+    nav ul {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+main {
+    text-align: center;
+    min-height: 720px;
+}
+
+.bg-img {
+    background-image: url(/Images/pattern-main.png);
+}
+
+footer {
+    text-align: center;
+}
+
+    footer a {
+        text-decoration: none;
+    }
+
+    footer .wrapper {
+        background: inherit;
+    }
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+
+    table tr td {
+        border: 1px solid black;
+    }
+
+.borderless tr td {
+    border: none;
 }

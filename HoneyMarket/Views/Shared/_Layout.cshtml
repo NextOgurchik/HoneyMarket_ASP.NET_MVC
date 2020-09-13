@@ -5,22 +5,40 @@
     <title>Магазин "Ивашково"</title>
 </head>
 <body>
-    <div>
-        @Html.ActionLink("На главную", "Index", "Home")
-        @Html.ActionLink("Список заказов", "PurchaseList", "Home")
-        <br />
+    <header class="bg-img">
+        <div class="wrapper">
 
+        </div>
+    </header>
+    <nav>
+        <div class="wrapper">
+            <ul>
+                <li>@Html.ActionLink("На главную", "Index", "Home")</li>
+                <li> @Html.ActionLink("Список заказов", "PurchaseList", "Home")</li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Социальные сети</a></li>
+            </ul>
+    </div>
+</nav>
+<main class="bg-img">
+    <div class="wrapper">
+        <br />
         @RenderBody()
     </div>
-    <footer>
+</main>
+<footer>
+    <div class="wrapper">
         @if (IsSectionDefined("Footer"))
         {
             RenderSection("Footer");
         }
         else
         {
-            <span>© Федотов Михаил</span>
+            <span>© </span><a href="https://vk.com/ngurchik"> Федотов Михаил</a>
         }
-    </footer>
+    </div>
+</footer>
 </body>
 </html>
