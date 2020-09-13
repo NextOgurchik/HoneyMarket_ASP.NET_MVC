@@ -1,17 +1,26 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <link type="text/css" rel="stylesheet" href="~/Content/Site.css"
-    <title>
-        Ivashkovskiy Shop
-    </title>
+    <link type="text/css" rel="stylesheet" href="~/Content/SiteStyle.css">
+    <title>Магазин "Ивашково"</title>
 </head>
 <body>
     <div>
-        @Html.ActionLink("На главную","Index","Home")
+        @Html.ActionLink("На главную", "Index", "Home")
+        @Html.ActionLink("Список заказов", "PurchaseList", "Home")
         <br />
 
         @RenderBody()
     </div>
+    <footer>
+        @if (IsSectionDefined("Footer"))
+        {
+            RenderSection("Footer");
+        }
+        else
+        {
+            <span>© Федотов Михаил</span>
+        }
+    </footer>
 </body>
 </html>

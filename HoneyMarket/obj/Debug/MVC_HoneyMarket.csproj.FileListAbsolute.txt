@@ -159,8 +159,8 @@ J:\_Проги_С#\Git\HoneyMarket\HoneyMarket\bin\System.Web.WebPages.xml
 J:\_Проги_С#\Git\HoneyMarket\HoneyMarket\bin\System.Web.WebPages.Deployment.xml
 J:\_Проги_С#\Git\HoneyMarket\HoneyMarket\bin\System.Web.WebPages.Razor.xml
 J:\_Проги_С#\Git\HoneyMarket\HoneyMarket\bin\Antlr3.Runtime.pdb
-J:\_Проги_С#\Git\HoneyMarket\HoneyMarket\obj\Debug\MVC_HoneyMarket.csprojAssemblyReference.cache
 J:\_Проги_С#\Git\HoneyMarket\HoneyMarket\obj\Debug\MVC_HoneyMarket.csproj.CoreCompileInputs.cache
 J:\_Проги_С#\Git\HoneyMarket\HoneyMarket\obj\Debug\MVC_HoneyMarket.csproj.CopyComplete
 J:\_Проги_С#\Git\HoneyMarket\HoneyMarket\obj\Debug\HoneyMarket.dll
 J:\_Проги_С#\Git\HoneyMarket\HoneyMarket\obj\Debug\HoneyMarket.pdb
+J:\_Проги_С#\Git\HoneyMarket\HoneyMarket\obj\Debug\MVC_HoneyMarket.csprojAssemblyReference.cache

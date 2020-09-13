@@ -13,7 +13,6 @@ namespace HoneyMarket.Controllers
         public ActionResult Index()
         {
             IEnumerable<Honey> honeys = honeyContext.Honeys;
-
             ViewBag.Honeys = honeys;
 
             return View();
@@ -28,11 +27,24 @@ namespace HoneyMarket.Controllers
         }
 
         [HttpPost]
-        public string Buy(Purchase purchase)
+        public ActionResult Buy(Purchase purchase)
         {
             purchase.DateTime = DateTime.Now;
             honeyContext.Purchases.Add(purchase);
-            return purchase.FIO + ", покупка прошла успешно!";
+            honeyContext.SaveChanges();
+            ViewBag.Purchase = purchase;
+            return View("/Views/Home/BuyAccept.cshtml");
+        }
+
+        [HttpGet]
+        public ActionResult PurchaseList()
+        {
+            IEnumerable<Purchase> purchases = honeyContext.Purchases;
+            IEnumerable<Honey> honeys = honeyContext.Honeys;
+            ViewBag.Purchases = purchases;
+            ViewBag.Honeys = honeys;
+
+            return View();
         }
     }
 }

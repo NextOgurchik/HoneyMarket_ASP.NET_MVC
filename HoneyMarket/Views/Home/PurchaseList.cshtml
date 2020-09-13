@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+
+<table>
+    <thead>
+        <tr>
+            <td>ID заказа</td>
+            <td>ID товара</td>
+            <td>Дата заказа</td>
+            <td>Email</td>
+            <td>ФИО заказчика</td>
+            <td>Адрес</td>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var purchase in ViewBag.Purchases)
+            {
+                <tr>
+                    <td>@purchase.Id</td>
+                    <td>@purchase.HoneyId</td>
+                    <td>@purchase.DateTime</td>
+                    <td>@purchase.Email</td>
+                    <td>@purchase.FIO</td>
+                    <td>@purchase.Address</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
